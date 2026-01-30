@@ -81,7 +81,7 @@ try
     Write-PackageName -Name $Name -BracketColor Cyan -TextColor DarkCyan
     Write-Color -Text " 🔍 Validando calidad de código..." -Color White
     pnpm lint
-    pnpm test
+    pnpm test:run
 
     # 4. Build
     Write-PackageName -Name $Name
