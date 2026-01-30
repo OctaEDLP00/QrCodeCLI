@@ -1,6 +1,6 @@
 {
-  "name": "@qrx/qrcode-cli",
-  "version": "0.0.2",
+  "name": "@qr-render/qrcode-cli",
+  "version": "0.0.3",
   "description": "",
   "keywords": [
     "builder",
