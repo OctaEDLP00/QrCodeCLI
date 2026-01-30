@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ES6",
+		"outDir": "./dist",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"useDefineForClassFields": true,
+		"moduleResolution": "bundler",
+		"noImplicitAny": true,
+		"resolveJsonModule": true,
+		"rootDir": "."
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist", "test/*.{test,spec}.ts"]
+}
