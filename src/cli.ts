@@ -1,8 +1,12 @@
+/// <reference types="node" />
 import { QRCodeModel } from './core/QRCodeModel.js'
 import { ConsoleDrawing } from './renderer/ConsoleDrawing.js'
 import { QrErrorCorrectLevel } from './types/index.d.js'
 import type { QRCodeOptionCLI, CLIErrorLevel } from './types/index.d.js'
 import { Command } from 'commander'
+import { createRequire } from 'node:module'
+const require = createRequire(import.meta.url)
+const packageJson = require('../package.json')
 
 /**
  * Finds the minimum QR version required for the given data and error level.
@@ -27,7 +31,9 @@ const getOptimalVersion = (data: string, level: QrErrorCorrectLevel): number => 
 
 const program = new Command()
 
-program.name('qrx').description('Professional QR Code generation in your terminal').version('1.0.0')
+program
+	.description('Professional QR Code generation in your terminal')
+	.version(packageJson.version)
 
 program
 	.argument('<text>', 'Text or URL to encode')

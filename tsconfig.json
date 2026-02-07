@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"module": "ES6",
+		"module": "node20",
 		"outDir": "./dist",
 		"strict": true,
 		"esModuleInterop": true,
@@ -9,7 +9,6 @@
 		"forceConsistentCasingInFileNames": true,
 		"allowSyntheticDefaultImports": true,
 		"useDefineForClassFields": true,
-		"moduleResolution": "bundler",
 		"noImplicitAny": true,
 		"resolveJsonModule": true,
 		"rootDir": "."

@@ -55,7 +55,7 @@ if ($Version -match "-([a-zA-Z]+)")
     $NPM_TAG = $Matches[1]
 } else
 {
-    $NPM_TAG = "next" # Usamos 'next' para versiones estables
+    $NPM_TAG = "latest"
 }
 # -------------------------------------------
 
